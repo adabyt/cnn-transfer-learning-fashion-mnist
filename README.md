@@ -1,10 +1,10 @@
-# CNN Transfer Learning on Fashion MNIST 👟🧥
+# CNN Transfer Learning on Fashion MNIST
 
 This project applies **transfer learning** using a pre-trained [MobileNetV2](https://keras.io/api/applications/mobilenet/) model on the Fashion MNIST dataset. The goal is to compare its performance against custom CNN architectures trained from scratch.
 
 ---
 
-## 📌 What is Transfer Learning?
+## What is Transfer Learning?
 
 **Transfer learning** leverages pre-trained deep learning models (often trained on large-scale datasets like ImageNet) to solve new but related tasks. Instead of training a model from scratch, we:
 
@@ -13,11 +13,11 @@ This project applies **transfer learning** using a pre-trained [MobileNetV2](htt
 3. Add a custom classifier head for the new task (Fashion MNIST in this case).
 4. Optionally unfreeze and fine-tune some layers later.
 
-This is especially powerful when working with small or specialized datasets.
+This is especially powerful when working with small or specialised datasets.
 
 ---
 
-## 🧠 Related Projects (Custom CNN Models)
+## Related Projects (Custom CNN Models)
 
 | Model                    | GitHub Link                                                                 |
 |--------------------------|------------------------------------------------------------------------------|
@@ -27,7 +27,7 @@ This is especially powerful when working with small or specialized datasets.
 
 ---
 
-## 📊 Model Performance Comparison
+## Model Performance Comparison
 
 | Model (best performing)     | Test Accuracy | Test Loss |
 |----------------------------|---------------|-----------|
@@ -36,11 +36,11 @@ This is especially powerful when working with small or specialized datasets.
 | Regularised CNN             | 0.9102        | 0.2941    |
 | Augmented CNN               | 0.8976        | 0.2889    |
 
-⚠️ **Observation**: The Transfer Learning CNN performed *worse* than the custom-built CNNs trained from scratch.
+**Observation**: The Transfer Learning CNN performed *worse* than the custom-built CNNs trained from scratch.
 
 ---
 
-## 🧪 Training Observations
+## Training Observations
 
 - While accuracy improves and loss decreases during training (up to epoch 9), model efficiency on validation data decreases after epoch 6.
 - This suggests **overfitting**: the model starts to memorise the training data rather than generalise.
@@ -48,7 +48,7 @@ This is especially powerful when working with small or specialized datasets.
 
 ---
 
-## ⚠️ Why Did Transfer Learning Underperform?
+## Why Did Transfer Learning Underperform?
 
 Several factors might have contributed:
 
@@ -62,7 +62,7 @@ Several factors might have contributed:
 
 ---
 
-## 🚀 Future Directions
+## Future Directions
 
 To potentially improve results:
 
@@ -92,7 +92,7 @@ model_transfer.compile(
 
 ---
 
-🧠 Dataset
+## Dataset
 
 [Fashion MNIST Dataset](https://github.com/zalandoresearch/fashion-mnist)
 
@@ -100,6 +100,6 @@ Contains 70,000 grayscale images across 10 fashion categories.
 
 ---
 
-## 📌 License
+## License
 
 MIT License
